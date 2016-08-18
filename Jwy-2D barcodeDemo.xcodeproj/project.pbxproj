@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B21AC3841D64518800CCB212 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3831D64518800CCB212 /* main.m */; };
+		B21AC3871D64518800CCB212 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3861D64518800CCB212 /* AppDelegate.m */; };
+		B21AC38A1D64518800CCB212 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3891D64518800CCB212 /* ViewController.m */; };
+		B21AC38D1D64518800CCB212 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21AC38B1D64518800CCB212 /* Main.storyboard */; };
+		B21AC38F1D64518800CCB212 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B21AC38E1D64518800CCB212 /* Assets.xcassets */; };
+		B21AC3921D64518800CCB212 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B21AC3901D64518800CCB212 /* LaunchScreen.storyboard */; };
+		B21AC39D1D64518800CCB212 /* Jwy_2D_barcodeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC39C1D64518800CCB212 /* Jwy_2D_barcodeDemoTests.m */; };
+		B21AC3A81D64518800CCB212 /* Jwy_2D_barcodeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3A71D64518800CCB212 /* Jwy_2D_barcodeDemoUITests.m */; };
+		B21AC3B71D64542100CCB212 /* Jwy2Dbarcode.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3B61D64542100CCB212 /* Jwy2Dbarcode.m */; };
+		B2DB21C01D655E0C008E8444 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB21BE1D655E0C008E8444 /* ScanViewController.m */; };
+		B2DB21C11D655E0C008E8444 /* ScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB21BF1D655E0C008E8444 /* ScanViewController.xib */; };
+		B2DB21C41D656009008E8444 /* successViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB21C31D656009008E8444 /* successViewController.m */; };
+		B2DB21C71D65605C008E8444 /* 10883.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2DB21C51D65605C008E8444 /* 10883.jpg */; };
+		B2DB21C81D65605C008E8444 /* 2442470-3170624f34542e56.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B2DB21C61D65605C008E8444 /* 2442470-3170624f34542e56.jpg */; };
+		B2DB21CE1D6565F9008E8444 /* LmitScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB21CC1D6565F9008E8444 /* LmitScanController.m */; };
+		B2DB21CF1D6565F9008E8444 /* LmitScanController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2DB21CD1D6565F9008E8444 /* LmitScanController.xib */; };
+		B2DB21D71D659E76008E8444 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB21D21D659E76008E8444 /* SVIndefiniteAnimatedView.m */; };
+		B2DB21D81D659E76008E8444 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B2DB21D41D659E76008E8444 /* SVProgressHUD.bundle */; };
+		B2DB21D91D659E76008E8444 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B2DB21D61D659E76008E8444 /* SVProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B21AC3991D64518800CCB212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B21AC3771D64518800CCB212 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B21AC37E1D64518800CCB212;
+			remoteInfo = "Jwy-2D barcodeDemo";
+		};
+		B21AC3A41D64518800CCB212 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B21AC3771D64518800CCB212 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B21AC37E1D64518800CCB212;
+			remoteInfo = "Jwy-2D barcodeDemo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B21AC37F1D64518800CCB212 /* Jwy-2D barcodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jwy-2D barcodeDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21AC3831D64518800CCB212 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B21AC3851D64518800CCB212 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B21AC3861D64518800CCB212 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B21AC3881D64518800CCB212 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B21AC3891D64518800CCB212 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B21AC38C1D64518800CCB212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B21AC38E1D64518800CCB212 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B21AC3911D64518800CCB212 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B21AC3931D64518800CCB212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21AC3981D64518800CCB212 /* Jwy-2D barcodeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jwy-2D barcodeDemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21AC39C1D64518800CCB212 /* Jwy_2D_barcodeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jwy_2D_barcodeDemoTests.m; sourceTree = "<group>"; };
+		B21AC39E1D64518800CCB212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21AC3A31D64518800CCB212 /* Jwy-2D barcodeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jwy-2D barcodeDemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B21AC3A71D64518800CCB212 /* Jwy_2D_barcodeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Jwy_2D_barcodeDemoUITests.m; sourceTree = "<group>"; };
+		B21AC3A91D64518800CCB212 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B21AC3B51D64542100CCB212 /* Jwy2Dbarcode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jwy2Dbarcode.h; sourceTree = "<group>"; };
+		B21AC3B61D64542100CCB212 /* Jwy2Dbarcode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jwy2Dbarcode.m; sourceTree = "<group>"; };
+		B2DB21BD1D655E0C008E8444 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		B2DB21BE1D655E0C008E8444 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		B2DB21BF1D655E0C008E8444 /* ScanViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanViewController.xib; sourceTree = "<group>"; };
+		B2DB21C21D656009008E8444 /* successViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = successViewController.h; sourceTree = "<group>"; };
+		B2DB21C31D656009008E8444 /* successViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = successViewController.m; sourceTree = "<group>"; };
+		B2DB21C51D65605C008E8444 /* 10883.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10883.jpg; sourceTree = "<group>"; };
+		B2DB21C61D65605C008E8444 /* 2442470-3170624f34542e56.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2442470-3170624f34542e56.jpg"; sourceTree = "<group>"; };
+		B2DB21CB1D6565F9008E8444 /* LmitScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmitScanController.h; sourceTree = "<group>"; };
+		B2DB21CC1D6565F9008E8444 /* LmitScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmitScanController.m; sourceTree = "<group>"; };
+		B2DB21CD1D6565F9008E8444 /* LmitScanController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LmitScanController.xib; sourceTree = "<group>"; };
+		B2DB21D11D659E76008E8444 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		B2DB21D21D659E76008E8444 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		B2DB21D31D659E76008E8444 /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		B2DB21D41D659E76008E8444 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		B2DB21D51D659E76008E8444 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		B2DB21D61D659E76008E8444 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B21AC37C1D64518800CCB212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21AC3951D64518800CCB212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21AC3A01D64518800CCB212 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B21AC3761D64518800CCB212 = {
+			isa = PBXGroup;
+			children = (
+				B21AC3811D64518800CCB212 /* Jwy-2D barcodeDemo */,
+				B21AC39B1D64518800CCB212 /* Jwy-2D barcodeDemoTests */,
+				B21AC3A61D64518800CCB212 /* Jwy-2D barcodeDemoUITests */,
+				B21AC3801D64518800CCB212 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B21AC3801D64518800CCB212 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B21AC37F1D64518800CCB212 /* Jwy-2D barcodeDemo.app */,
+				B21AC3981D64518800CCB212 /* Jwy-2D barcodeDemoTests.xctest */,
+				B21AC3A31D64518800CCB212 /* Jwy-2D barcodeDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B21AC3811D64518800CCB212 /* Jwy-2D barcodeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB21D01D659E76008E8444 /* SVProgressHUD */,
+				B2DB21CA1D6564DF008E8444 /* Image */,
+				B2DB21C91D6564A9008E8444 /* 扫描 */,
+				B21AC3B51D64542100CCB212 /* Jwy2Dbarcode.h */,
+				B21AC3B61D64542100CCB212 /* Jwy2Dbarcode.m */,
+				B21AC3851D64518800CCB212 /* AppDelegate.h */,
+				B21AC3861D64518800CCB212 /* AppDelegate.m */,
+				B21AC3881D64518800CCB212 /* ViewController.h */,
+				B21AC3891D64518800CCB212 /* ViewController.m */,
+				B2DB21C21D656009008E8444 /* successViewController.h */,
+				B2DB21C31D656009008E8444 /* successViewController.m */,
+				B21AC38B1D64518800CCB212 /* Main.storyboard */,
+				B21AC38E1D64518800CCB212 /* Assets.xcassets */,
+				B21AC3901D64518800CCB212 /* LaunchScreen.storyboard */,
+				B21AC3931D64518800CCB212 /* Info.plist */,
+				B21AC3821D64518800CCB212 /* Supporting Files */,
+			);
+			path = "Jwy-2D barcodeDemo";
+			sourceTree = "<group>";
+		};
+		B21AC3821D64518800CCB212 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B21AC3831D64518800CCB212 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B21AC39B1D64518800CCB212 /* Jwy-2D barcodeDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				B21AC39C1D64518800CCB212 /* Jwy_2D_barcodeDemoTests.m */,
+				B21AC39E1D64518800CCB212 /* Info.plist */,
+			);
+			path = "Jwy-2D barcodeDemoTests";
+			sourceTree = "<group>";
+		};
+		B21AC3A61D64518800CCB212 /* Jwy-2D barcodeDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B21AC3A71D64518800CCB212 /* Jwy_2D_barcodeDemoUITests.m */,
+				B21AC3A91D64518800CCB212 /* Info.plist */,
+			);
+			path = "Jwy-2D barcodeDemoUITests";
+			sourceTree = "<group>";
+		};
+		B2DB21C91D6564A9008E8444 /* 扫描 */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB21BD1D655E0C008E8444 /* ScanViewController.h */,
+				B2DB21BE1D655E0C008E8444 /* ScanViewController.m */,
+				B2DB21BF1D655E0C008E8444 /* ScanViewController.xib */,
+				B2DB21CB1D6565F9008E8444 /* LmitScanController.h */,
+				B2DB21CC1D6565F9008E8444 /* LmitScanController.m */,
+				B2DB21CD1D6565F9008E8444 /* LmitScanController.xib */,
+			);
+			name = "扫描";
+			sourceTree = "<group>";
+		};
+		B2DB21CA1D6564DF008E8444 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB21C51D65605C008E8444 /* 10883.jpg */,
+				B2DB21C61D65605C008E8444 /* 2442470-3170624f34542e56.jpg */,
+			);
+			name = Image;
+			sourceTree = "<group>";
+		};
+		B2DB21D01D659E76008E8444 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				B2DB21D11D659E76008E8444 /* SVIndefiniteAnimatedView.h */,
+				B2DB21D21D659E76008E8444 /* SVIndefiniteAnimatedView.m */,
+				B2DB21D31D659E76008E8444 /* SVProgressHUD-Prefix.pch */,
+				B2DB21D41D659E76008E8444 /* SVProgressHUD.bundle */,
+				B2DB21D51D659E76008E8444 /* SVProgressHUD.h */,
+				B2DB21D61D659E76008E8444 /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B21AC37E1D64518800CCB212 /* Jwy-2D barcodeDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21AC3AC1D64518800CCB212 /* Build configuration list for PBXNativeTarget "Jwy-2D barcodeDemo" */;
+			buildPhases = (
+				B21AC37B1D64518800CCB212 /* Sources */,
+				B21AC37C1D64518800CCB212 /* Frameworks */,
+				B21AC37D1D64518800CCB212 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jwy-2D barcodeDemo";
+			productName = "Jwy-2D barcodeDemo";
+			productReference = B21AC37F1D64518800CCB212 /* Jwy-2D barcodeDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B21AC3971D64518800CCB212 /* Jwy-2D barcodeDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21AC3AF1D64518800CCB212 /* Build configuration list for PBXNativeTarget "Jwy-2D barcodeDemoTests" */;
+			buildPhases = (
+				B21AC3941D64518800CCB212 /* Sources */,
+				B21AC3951D64518800CCB212 /* Frameworks */,
+				B21AC3961D64518800CCB212 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B21AC39A1D64518800CCB212 /* PBXTargetDependency */,
+			);
+			name = "Jwy-2D barcodeDemoTests";
+			productName = "Jwy-2D barcodeDemoTests";
+			productReference = B21AC3981D64518800CCB212 /* Jwy-2D barcodeDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B21AC3A21D64518800CCB212 /* Jwy-2D barcodeDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B21AC3B21D64518800CCB212 /* Build configuration list for PBXNativeTarget "Jwy-2D barcodeDemoUITests" */;
+			buildPhases = (
+				B21AC39F1D64518800CCB212 /* Sources */,
+				B21AC3A01D64518800CCB212 /* Frameworks */,
+				B21AC3A11D64518800CCB212 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B21AC3A51D64518800CCB212 /* PBXTargetDependency */,
+			);
+			name = "Jwy-2D barcodeDemoUITests";
+			productName = "Jwy-2D barcodeDemoUITests";
+			productReference = B21AC3A31D64518800CCB212 /* Jwy-2D barcodeDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B21AC3771D64518800CCB212 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = JWY;
+				TargetAttributes = {
+					B21AC37E1D64518800CCB212 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B21AC3971D64518800CCB212 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B21AC37E1D64518800CCB212;
+					};
+					B21AC3A21D64518800CCB212 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B21AC37E1D64518800CCB212;
+					};
+				};
+			};
+			buildConfigurationList = B21AC37A1D64518800CCB212 /* Build configuration list for PBXProject "Jwy-2D barcodeDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B21AC3761D64518800CCB212;
+			productRefGroup = B21AC3801D64518800CCB212 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B21AC37E1D64518800CCB212 /* Jwy-2D barcodeDemo */,
+				B21AC3971D64518800CCB212 /* Jwy-2D barcodeDemoTests */,
+				B21AC3A21D64518800CCB212 /* Jwy-2D barcodeDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B21AC37D1D64518800CCB212 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DB21C71D65605C008E8444 /* 10883.jpg in Resources */,
+				B21AC3921D64518800CCB212 /* LaunchScreen.storyboard in Resources */,
+				B2DB21CF1D6565F9008E8444 /* LmitScanController.xib in Resources */,
+				B2DB21D81D659E76008E8444 /* SVProgressHUD.bundle in Resources */,
+				B21AC38F1D64518800CCB212 /* Assets.xcassets in Resources */,
+				B21AC38D1D64518800CCB212 /* Main.storyboard in Resources */,
+				B2DB21C81D65605C008E8444 /* 2442470-3170624f34542e56.jpg in Resources */,
+				B2DB21C11D655E0C008E8444 /* ScanViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21AC3961D64518800CCB212 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21AC3A11D64518800CCB212 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B21AC37B1D64518800CCB212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2DB21CE1D6565F9008E8444 /* LmitScanController.m in Sources */,
+				B2DB21C41D656009008E8444 /* successViewController.m in Sources */,
+				B21AC38A1D64518800CCB212 /* ViewController.m in Sources */,
+				B2DB21D71D659E76008E8444 /* SVIndefiniteAnimatedView.m in Sources */,
+				B2DB21C01D655E0C008E8444 /* ScanViewController.m in Sources */,
+				B2DB21D91D659E76008E8444 /* SVProgressHUD.m in Sources */,
+				B21AC3B71D64542100CCB212 /* Jwy2Dbarcode.m in Sources */,
+				B21AC3871D64518800CCB212 /* AppDelegate.m in Sources */,
+				B21AC3841D64518800CCB212 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21AC3941D64518800CCB212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21AC39D1D64518800CCB212 /* Jwy_2D_barcodeDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21AC39F1D64518800CCB212 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B21AC3A81D64518800CCB212 /* Jwy_2D_barcodeDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B21AC39A1D64518800CCB212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B21AC37E1D64518800CCB212 /* Jwy-2D barcodeDemo */;
+			targetProxy = B21AC3991D64518800CCB212 /* PBXContainerItemProxy */;
+		};
+		B21AC3A51D64518800CCB212 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B21AC37E1D64518800CCB212 /* Jwy-2D barcodeDemo */;
+			targetProxy = B21AC3A41D64518800CCB212 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B21AC38B1D64518800CCB212 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B21AC38C1D64518800CCB212 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B21AC3901D64518800CCB212 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B21AC3911D64518800CCB212 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B21AC3AA1D64518800CCB212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B21AC3AB1D64518800CCB212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B21AC3AD1D64518800CCB212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Jwy-2D barcodeDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xiaoming.com.Jwy-2D-barcodeDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B21AC3AE1D64518800CCB212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Jwy-2D barcodeDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xiaoming.com.Jwy-2D-barcodeDemo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B21AC3B01D64518800CCB212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Jwy-2D barcodeDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xiaoming.com.Jwy-2D-barcodeDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jwy-2D barcodeDemo.app/Jwy-2D barcodeDemo";
+			};
+			name = Debug;
+		};
+		B21AC3B11D64518800CCB212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Jwy-2D barcodeDemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xiaoming.com.Jwy-2D-barcodeDemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jwy-2D barcodeDemo.app/Jwy-2D barcodeDemo";
+			};
+			name = Release;
+		};
+		B21AC3B31D64518800CCB212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jwy-2D barcodeDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xiaoming.com.Jwy-2D-barcodeDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jwy-2D barcodeDemo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B21AC3B41D64518800CCB212 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jwy-2D barcodeDemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "xiaoming.com.Jwy-2D-barcodeDemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jwy-2D barcodeDemo";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B21AC37A1D64518800CCB212 /* Build configuration list for PBXProject "Jwy-2D barcodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21AC3AA1D64518800CCB212 /* Debug */,
+				B21AC3AB1D64518800CCB212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B21AC3AC1D64518800CCB212 /* Build configuration list for PBXNativeTarget "Jwy-2D barcodeDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21AC3AD1D64518800CCB212 /* Debug */,
+				B21AC3AE1D64518800CCB212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B21AC3AF1D64518800CCB212 /* Build configuration list for PBXNativeTarget "Jwy-2D barcodeDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21AC3B01D64518800CCB212 /* Debug */,
+				B21AC3B11D64518800CCB212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B21AC3B21D64518800CCB212 /* Build configuration list for PBXNativeTarget "Jwy-2D barcodeDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B21AC3B31D64518800CCB212 /* Debug */,
+				B21AC3B41D64518800CCB212 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B21AC3771D64518800CCB212 /* Project object */;
+}

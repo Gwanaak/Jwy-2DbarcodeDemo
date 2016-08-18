@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wOS-Vr-X7F">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入要生成二维码的文字" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cEX-O4-lk0">
+                                <rect key="frame" x="47" y="133" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.90196078430000004" green="0.76470588240000004" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="G1w-0r-pDr"/>
+                                    <constraint firstAttribute="width" constant="280" id="T64-d9-5fj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oFz-U5-rez">
+                                <rect key="frame" x="47" y="191" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="w1Z-Kl-vTb"/>
+                                </constraints>
+                                <state key="normal" title="生成二维码"/>
+                                <connections>
+                                    <action selector="create2Dbarcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHc-tS-PCy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRU-tz-ie3">
+                                <rect key="frame" x="47" y="491" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Huo-Eo-VZk"/>
+                                </constraints>
+                                <state key="normal" title="识别二维码"/>
+                                <connections>
+                                    <action selector="readQRcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iDZ-aA-cLb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0u-eh-lxo">
+                                <rect key="frame" x="62" y="231" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ELT-d1-TtE"/>
+                                    <constraint firstAttribute="width" constant="250" id="de2-12-KEX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-Ty-8KE">
+                                <rect key="frame" x="306" y="64" width="64" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="范围扫描"/>
+                                <connections>
+                                    <action selector="scan2Dbarcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xbM-Is-Oqb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oFz-U5-rez" firstAttribute="centerX" secondItem="cEX-O4-lk0" secondAttribute="centerX" id="0mQ-1r-uHo"/>
+                            <constraint firstItem="fRU-tz-ie3" firstAttribute="top" secondItem="U0u-eh-lxo" secondAttribute="bottom" constant="10" id="JnA-o9-PRK"/>
+                            <constraint firstItem="cEX-O4-lk0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="69" id="Rsh-5S-j8G"/>
+                            <constraint firstAttribute="trailing" secondItem="hnk-Ty-8KE" secondAttribute="trailing" constant="5" id="Ydx-Px-jgv"/>
+                            <constraint firstItem="U0u-eh-lxo" firstAttribute="top" secondItem="oFz-U5-rez" secondAttribute="bottom" constant="10" id="aS2-6a-8N7"/>
+                            <constraint firstItem="fRU-tz-ie3" firstAttribute="centerX" secondItem="U0u-eh-lxo" secondAttribute="centerX" id="eSE-vf-VzG"/>
+                            <constraint firstItem="U0u-eh-lxo" firstAttribute="centerX" secondItem="oFz-U5-rez" secondAttribute="centerX" id="fe1-BR-PYg"/>
+                            <constraint firstItem="cEX-O4-lk0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nCp-yO-DJZ"/>
+                            <constraint firstItem="hnk-Ty-8KE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="oyE-L7-R1Z"/>
+                            <constraint firstItem="oFz-U5-rez" firstAttribute="top" secondItem="cEX-O4-lk0" secondAttribute="bottom" constant="28" id="z5J-N1-I1y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DZ6-O5-Fds">
+                        <barButtonItem key="rightBarButtonItem" title="扫描" id="ZXi-cd-83k">
+                            <connections>
+                                <action selector="read2Dbarcode:" destination="BYZ-38-t0r" id="A4V-7J-V8U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="barcodeImgview" destination="U0u-eh-lxo" id="Z82-KD-bfM"/>
+                        <outlet property="textfield" destination="cEX-O4-lk0" id="hxP-5g-VuT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.5" y="316.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fgc-rp-Lmp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wOS-Vr-X7F" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UqS-mj-lIC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="dPg-q6-pyN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fzR-c2-nH7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="248" y="-375"/>
+        </scene>
+    </scenes>
+</document>
