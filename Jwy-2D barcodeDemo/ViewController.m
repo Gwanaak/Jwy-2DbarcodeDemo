@@ -59,7 +59,8 @@
     
     NSString *qrStr=self.textfield.text;
     //调用1:
-    self.barcodeImgview=[Jwy2Dbarcode setShadowQRcodeView:self.barcodeImgview string:qrStr size:250.0f withRed:60.0f andGreen:74.0f andBlue:89.0f];
+    UIImage *headerImage=[UIImage imageNamed:@"picture@2x"];
+    self.barcodeImgview=[Jwy2Dbarcode setShadowQRcodeView:self.barcodeImgview string:qrStr size:250.0f withRed:60.0f andGreen:74.0f andBlue:89.0f with:headerImage];
     
     //调用2:
     //self.barcodeImgview=[Jwy2Dbarcode setShadowQRcodeView:self.barcodeImgview string:qrStr size:250.0f fillColor:[UIColor purpleColor]];

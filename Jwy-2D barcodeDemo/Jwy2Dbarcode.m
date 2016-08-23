@@ -182,5 +182,131 @@ void ProviderReleaseData (void *info, const void *data, size_t size){
     qrcodeView.layer.shadowOpacity = 0.5;
     return qrcodeView;
 }
+//带图片二维码
++(UIImageView *)setShadowQRcodeView:(UIImageView *)qrcodeView string:(NSString *)qrString size:(CGFloat)size withRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue with:(UIImage *)headerImage{
+    UIImage *barcodeImg= [self createQRimageString:qrString size:size withRed:red andGreen:green andBlue:blue];
+    qrcodeView.image=[self imageInsertedImage:barcodeImg insertImage:headerImage radius:10.0f];
+    // set shadow
+    qrcodeView.layer.shadowOffset = CGSizeMake(0, 2);
+    qrcodeView.layer.shadowRadius = 2;
+    qrcodeView.layer.shadowColor = [UIColor blackColor].CGColor;
+    qrcodeView.layer.shadowOpacity = 0.5;
+    return qrcodeView;
+}
+
+#pragma mark －－－在二维码原图中心位置插入圆角图像－－－
+//在二维码原图中心位置插入圆角图像
++ (UIImage *)imageInsertedImage: (UIImage *)originImage insertImage: (UIImage *)insertImage radius: (CGFloat)radius{
+    
+    if (!insertImage) { return originImage; }
+    
+        //画圆角
+        insertImage = [self imageOfRoundRectWithImage: insertImage size: insertImage.size radius: radius];
+        
+        UIImage * whiteBG = [UIImage imageNamed: @"whiteBG"];
+        
+        whiteBG = [self imageOfRoundRectWithImage: whiteBG size: whiteBG.size radius: radius];
+        
+        //白色边缘宽度
+        
+        const CGFloat whiteSize = 2.f;
+        
+        CGSize brinkSize = CGSizeMake(originImage.size.width / 4, originImage.size.height / 4);
+        
+        CGFloat brinkX = (originImage.size.width - brinkSize.width) * 0.5;
+        
+        CGFloat brinkY = (originImage.size.height - brinkSize.height) * 0.5;
+        
+        CGSize imageSize = CGSizeMake(brinkSize.width - 2 * whiteSize, brinkSize.height - 2 * whiteSize);
+        
+        CGFloat imageX = brinkX + whiteSize;
+        
+        CGFloat imageY = brinkY + whiteSize;
+        
+        UIGraphicsBeginImageContext(originImage.size);
+        
+        [originImage drawInRect: (CGRect){ 0, 0, (originImage.size) }];
+        
+        [whiteBG drawInRect: (CGRect){ brinkX, brinkY, (brinkSize) }];
+        
+        [insertImage drawInRect: (CGRect){ imageX, imageY, (imageSize) }];
+        
+        UIImage * resultImage = UIGraphicsGetImageFromCurrentImageContext();
+        
+        UIGraphicsEndImageContext();
+        
+        return resultImage;
+    
+}
++ (UIImage *)imageOfRoundRectWithImage: (UIImage *)image size: (CGSize)size radius: (CGFloat)radius
+
+{
+    
+    if (!image) { return nil; }
+    
+        const CGFloat width = size.width;
+
+        const CGFloat height = size.height;
+
+        radius = MAX(5.f, radius);
+
+        radius = MIN(10.f, radius);
+
+        UIImage * img = image;
+
+        CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+
+        CGContextRef context = CGBitmapContextCreate(NULL, width, height, 8, 4 * width, colorSpace, kCGImageAlphaPremultipliedFirst);
+
+        CGRect rect = CGRectMake(0, 0, width, height);
+
+        //绘制圆角
+
+        CGContextBeginPath(context);
+    
+        addRoundRectToPath(context, rect, radius, img.CGImage);
+
+        CGImageRef imageMasked = CGBitmapContextCreateImage(context);
+
+        img = [UIImage imageWithCGImage: imageMasked];
+
+        CGContextRelease(context);
+
+        CGColorSpaceRelease(colorSpace);
+
+        CGImageRelease(imageMasked);
+
+        return img;
+    
+}
+/**
+ *  给上下文添加圆角蒙版
+ */
+void addRoundRectToPath(CGContextRef context, CGRect rect, float radius, CGImageRef image)
+{
+    float width, height;
+    if (radius == 0) {
+        CGContextAddRect(context, rect);
+        return;
+    }
+    
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, CGRectGetMinX(rect), CGRectGetMinY(rect));
+    width = CGRectGetWidth(rect);
+    height = CGRectGetHeight(rect);
+    
+    //裁剪路径
+    CGContextMoveToPoint(context, width, height / 2);
+    CGContextAddArcToPoint(context, width, height, width / 2, height, radius);
+    CGContextAddArcToPoint(context, 0, height, 0, height / 2, radius);
+    CGContextAddArcToPoint(context, 0, 0, width / 2, 0, radius);
+    CGContextAddArcToPoint(context, width, 0, width, height / 2, radius);
+    CGContextClosePath(context);
+    CGContextClip(context);
+    
+    CGContextDrawImage(context, CGRectMake(0, 0, width, height), image);
+    CGContextRestoreGState(context);
+}
+
 
 @end

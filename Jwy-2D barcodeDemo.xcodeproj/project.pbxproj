@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21337331D6BF67600079CA1 /* whiteBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B21337321D6BF67600079CA1 /* whiteBG@2x.png */; };
+		B21337351D6BF9F400079CA1 /* sg-wexinLog@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B21337341D6BF9F400079CA1 /* sg-wexinLog@2x.png */; };
+		B21337371D6BFA6C00079CA1 /* picture@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B21337361D6BFA6C00079CA1 /* picture@2x.png */; };
 		B21AC3841D64518800CCB212 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3831D64518800CCB212 /* main.m */; };
 		B21AC3871D64518800CCB212 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3861D64518800CCB212 /* AppDelegate.m */; };
 		B21AC38A1D64518800CCB212 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B21AC3891D64518800CCB212 /* ViewController.m */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21337321D6BF67600079CA1 /* whiteBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteBG@2x.png"; sourceTree = "<group>"; };
+		B21337341D6BF9F400079CA1 /* sg-wexinLog@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sg-wexinLog@2x.png"; sourceTree = "<group>"; };
+		B21337361D6BFA6C00079CA1 /* picture@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "picture@2x.png"; sourceTree = "<group>"; };
 		B21AC37F1D64518800CCB212 /* Jwy-2D barcodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jwy-2D barcodeDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B21AC3831D64518800CCB212 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B21AC3851D64518800CCB212 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -192,6 +198,9 @@
 		B2DB21CA1D6564DF008E8444 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				B21337361D6BFA6C00079CA1 /* picture@2x.png */,
+				B21337341D6BF9F400079CA1 /* sg-wexinLog@2x.png */,
+				B21337321D6BF67600079CA1 /* whiteBG@2x.png */,
 				B2DB21C51D65605C008E8444 /* 10883.jpg */,
 				B2DB21C61D65605C008E8444 /* 2442470-3170624f34542e56.jpg */,
 			);
@@ -318,10 +327,13 @@
 				B21AC3921D64518800CCB212 /* LaunchScreen.storyboard in Resources */,
 				B2DB21CF1D6565F9008E8444 /* LmitScanController.xib in Resources */,
 				B2DB21D81D659E76008E8444 /* SVProgressHUD.bundle in Resources */,
+				B21337331D6BF67600079CA1 /* whiteBG@2x.png in Resources */,
 				B21AC38F1D64518800CCB212 /* Assets.xcassets in Resources */,
 				B21AC38D1D64518800CCB212 /* Main.storyboard in Resources */,
+				B21337371D6BFA6C00079CA1 /* picture@2x.png in Resources */,
 				B2DB21C81D65605C008E8444 /* 2442470-3170624f34542e56.jpg in Resources */,
 				B2DB21C11D655E0C008E8444 /* ScanViewController.xib in Resources */,
+				B21337351D6BF9F400079CA1 /* sg-wexinLog@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

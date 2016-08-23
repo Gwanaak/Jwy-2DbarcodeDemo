@@ -16,4 +16,7 @@
 +(UIImage *)createQRimageString:(NSString *)qrString size:(CGFloat)size withRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue;
 //读取二维码
 +(NSString *)readQRCodeFromImage:(UIImage *)image;
+
+//带图片二维码
++(UIImageView *)setShadowQRcodeView:(UIImageView *)qrcodeView string:(NSString *)qrString size:(CGFloat)size withRed:(CGFloat)red andGreen:(CGFloat)green andBlue:(CGFloat)blue with:(UIImage *)headerImage;
 @end
